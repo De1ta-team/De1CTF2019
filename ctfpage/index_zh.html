@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>De1CTF 2019</title>
+<link href="//cdn.bootcss.com/normalize/5.0.0/normalize.css" rel="stylesheet">
+<link href="//cdn.bootcss.com/onepage-scroll/1.3.1/onepage-scroll.min.css" rel="stylesheet">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+<section class="countdown">
+<div class="center time">
+
+<span data-type="WEEKS"></span>
+<span data-type="DAYS"></span>
+<span data-type="HOURS"></span>
+<span data-type="MINUTES"></span>
+<span data-type="SECONDS"></span>
+<a style="display:block; position: absolute; width: 100%;
+        text-align: center;font-size: 42px; color: #FFF; top: 150px;" href="http://de1ctf2019.xctf.org.cn">Go</a>
+</div>
+</section>
+<section>
+<div class="center intro">
+<div class="info">
+<h1>赛程</h1>
+<ul>
+<li>2019年7月20日 星期六 09:00 - 2019年7月22日 星期一 09:00 （共48小时）</li>
+</ul>
+<h1></h1>
+<h1>奖励</h1>
+<ul>
+<li>第一名 1,500 USD (20%个人所得税) 第五届XCTF总决赛名额</li>
+<li>第二名 800 USD (20%个人所得税)</li>
+<li>第三名 500 USD (20%个人所得税)</li>
+</ul>
+<h2>De1CTF 赞助商</h2>
+<ul>
+<li>北京安普诺信息技术有限公司</li>
+<li>悬镜安全</li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<div class="center intro">
+<div class="info">
+<h1>规则</h1>
+<ol>
+<li>比赛结束后，排名前 10 的战队请在 24 小时内提交详细的 writeup</li>
+<li>禁止不同参赛队伍合作，或者共享解题思路、flag 等任何比赛相关信息</li>
+<li>禁止攻击比赛平台，如果发现平台漏洞，请务必向我们报告</li>
+<li>禁止在比赛中妨碍其他队伍解题，例如当你解完一道题后对环境进行破坏</li>
+<li>禁止往比赛平台发送大量流量，没有任何题目需要使用扫描器</li>
+<li>禁止对提交的 flag 进行爆破</li>
+<li>获奖的队伍必须提交完整解题报告</li>
+<li>大赛主办方有权修改包括赛题、规则等一切事项</li>
+<li>参赛队伍如有任何违规行为，将被取消比赛资格</li>
+</ol>
+</div>
+</div>
+</section>
+</div>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js" type="d96d71ab7ac128a701de774f-text/javascript"></script>
+<script src="//cdn.bootcss.com/moment.js/2.18.1/moment.min.js" type="d96d71ab7ac128a701de774f-text/javascript"></script>
+<script src="//cdn.bootcss.com/moment-timezone/0.5.11/moment-timezone-with-data-2010-2020.min.js" type="d96d71ab7ac128a701de774f-text/javascript"></script>
+<script src="//cdn.bootcss.com/onepage-scroll/1.3.1/jquery.onepage-scroll.min.js" type="d96d71ab7ac128a701de774f-text/javascript"></script>
+<script src="//cdn.bootcss.com/jquery.countdown/2.2.0/jquery.countdown.min.js" type="d96d71ab7ac128a701de774f-text/javascript"></script>
+<script type="d96d71ab7ac128a701de774f-text/javascript">
+	$(function() {
+		$(".container").onepage_scroll({
+			sectionContainer: "section",
+			easing: "ease",
+			animationTime: 500,
+			pagination: true,
+			updateURL: false,
+			loop: false,
+			keyboard: true,
+			responsiveFallback: false,
+			direction: "vertical"
+		});
+		var time = moment.tz("2019-07-20 09:00:00", 'Asia/Shanghai');
+		$('.countdown .time').countdown(time.toDate(), function(e) {
+			$('[data-type]').each(function() {
+				var tmp = e.offset[$(this).attr('data-type').toLowerCase()];
+				if($(this).attr('data-type') == 'MINUTES' || $(this).attr('data-type') == 'SECONDS') {
+					tmp = tmp < 10 ? '0' + tmp : tmp;
+				}
+				$(this).text(tmp);
+			})
+		});
+	});
+</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js" data-cf-settings="d96d71ab7ac128a701de774f-|49" defer=""></script></body>
+</html>
