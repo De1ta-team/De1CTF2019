@@ -1,0 +1,15 @@
+version: '2'
+services:
+  jaivyweb1:
+    image: andreisamuilik/php5.5.9-apache2.4-mysql5.5
+    build: ./jaivyweb1/
+    ports:
+      - "0.0.0.0:11027:80"
+    links:
+      - getshell
+  getshell: 
+    image: ubuntu:16.04
+    build: ./jaivyweb2/
+    tty:
+      true
+
