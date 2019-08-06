@@ -39,6 +39,9 @@ open("/dev/ptmx",O_RDWR);实际上会分配两个tty_struct，主从模式。实
 
 PS:向经典的ret2dir致敬。本来只是打算uaf加ret2dir的，后面写着写着就成伪竞态了。 :)
 
+## exp
+[exp.c](./exp.c)
+
 ## reference
 
 copy_to_user : https://elixir.bootlin.com/linux/v5.0-rc8/source/include/linux/uaccess.h#L149

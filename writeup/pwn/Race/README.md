@@ -10,9 +10,9 @@ Execute Sequence：
 |:-:|:-|
 |test_write||
 |copy_to_user||
-|缺页中断||
+|page fault||
 ||test_del|
-||kfree释放buffer|
+||kfree free buffer|
 |copy_to_user||
 
 So, we can successfully leak the slab address. 
@@ -39,6 +39,9 @@ I just changed tty->ops->ioctl to set_memory_x to get the physmap address excuta
 
 PS:ret2dir is very awesome. Originally, I only intended to use uaf with ret2dir, but gradually it became a race condition. :)
 
+## exp
+[exp.c](./exp.c)
+
 ## reference
 
 copy_to_user : https://elixir.bootlin.com/linux/v5.0-rc8/source/include/linux/uaccess.h#L149
@@ -48,5 +51,4 @@ ret2dir : https://www.blackhat.com/docs/eu-14/materials/eu-14-Kemerlis-Ret2dir-D
 O_DIRECT : http://man7.org/linux/man-pages/man2/open.2.html
 
 ptmx : https://docs.oracle.com/cd/E19253-01/816-4855/termsub15-14/index.html
-
 
