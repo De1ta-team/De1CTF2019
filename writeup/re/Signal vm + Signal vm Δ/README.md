@@ -35,7 +35,7 @@ SIGSEGV   | 00 00        | jcc
 SIGFPE    | 30 C0 F6 F8  | cmp
 ```
 
-The byte after opcode is used to tell us the  type of operand(except jcc, because the operand of jcc is always immediate).
+The byte after the opcode is used to tell us the  type of operand(except jcc, because the operand of jcc is always immediate).
 
 The high 4 bits represent first operand, and the low 4 bits represent the second:
 
@@ -63,15 +63,15 @@ In order to avoid multiple solutions, I modify the data that the number adjacent
 
 ### Source code
 
-vm1.c and vm2.c is the source code. As I'm a rookie, the code may be poor. Please don't care it.
+vm1.c and vm2.c are the source code. As I'm a rookie, the code may be poor. Please don't care it.
 
-hill.c and triangle.c is the source code of the algorithm.
+hill.c and triangle.c are the source code of the algorithm.
 
-assembly1.txt and assembly2.txt is the assembly of two challenge. I just translate it from x86 assembly.
+assembly1.txt and assembly2.txt are the assembly of two challenges. I just translate it from x86 assembly.
 
-simulate1.py and simulate2.py will parse the instruction and simulate execution, and then assemble it into bytecode1 and bytecode2.
+simulate1.py and simulate2.py will parse the instruction and simulate execution, and then assemble them into bytecode1 and bytecode2.
 
-solve1.py and solve2.py is the reference script.
+solve1.py and solve2.py are the reference scripts.
 
 
 
