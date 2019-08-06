@@ -1,3 +1,5 @@
+[中文](./writeup_zh.md) [English](./writeup_en.md)
+
 ## Mine Sweeping
 
 >source unity project : `Mine Sweeping Unity`
