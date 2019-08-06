@@ -1,3 +1,5 @@
+[中文](./README_zh.md) [English](./README.md)
+
 # Baby RSA
 
 This problem challenges basic understanding of RSA.

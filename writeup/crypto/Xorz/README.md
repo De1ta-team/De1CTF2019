@@ -1,3 +1,5 @@
+[中文](./README_zh.md) [English](./README.md)
+
 # xorz
 
 It is basically a transformed vigenere.
