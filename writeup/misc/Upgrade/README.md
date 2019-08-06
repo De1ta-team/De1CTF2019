@@ -1,4 +1,4 @@
-[中文](./writeup_zh.md) [English](./writeup_en.md)
+[中文](./README_zh.md) [English](./README.md)
 
 This game is to examine CTFer's ability to extract the file system from the encrypted firmware. I don't want to just ask questions for the competition. I hope that the CTF competition will be closer to the real environment. so I used the firmware encryption method that exists in the real device.
 

@@ -1,4 +1,4 @@
-[中文](./writeup_zh.md) [English](./writeup_en.md)
+[中文](./README_zh.md) [English](./README.md)
 
 ## Mine Sweeping
 
