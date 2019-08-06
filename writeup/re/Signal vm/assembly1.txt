@@ -1,0 +1,99 @@
+                mov     r6, 0
+                mov     r3, 0
+                jmp     loc_1
+loc_0:          add     r3, 1
+loc_1:          mov     r0, r3
+                mov     r2, r0
+                mov     r0, 50
+                add     r0, r2
+                mov     r0, [r0]
+                cmp     r0, 0
+                jnz     loc_0
+                cmp     r3, 70 
+                jz      loc_2
+                mov     r0, 0
+                jmp     loc_12
+loc_2:          mov     r3, 0
+                jmp     loc_8
+loc_3:          mov     r4, 0
+                jmp     loc_7
+loc_4:          mov     r6, 0
+                mov     r5, 0
+                jmp     loc_6
+loc_5:          mov     r2, r3
+                mov     r0, r2
+                shl     r0, 3
+                sub     r0, r2
+                mov     r2, r0
+                mov     r0, r5
+                add     r0, r2
+                mov     r2, r0
+                mov     r0, 50
+                add     r0, r2
+                mov     r1, [r0]
+                mov     r2, r5
+                mov     r0, r2
+                shl     r0, 3
+                sub     r0, r2
+                mov     r2, r0
+                mov     r0, r4
+                add     r0, r2
+                mov     r2, r0
+                mov     r0, 0        
+                add     r0, r2
+                mov     r2, [r0]
+                mov     r0, r1
+                imul    r0, r2
+                mod     r0, 256
+                add     r6, r0
+                mod     r6, 256
+                mov     r0, r5
+                add     r0, 1
+                mov     r5, r0
+loc_6:          cmp     r5, 6
+                jbe     loc_5
+                mov     r2, r3
+                mov     r0, r2
+                shl     r0, 3
+                sub     r0, r2
+                mov     r2, r0
+                mov     r0, r4
+                add     r0, r2
+                mov     r2, r0
+                mov     r0, 150
+                add     r0, r2
+                mov     r1, r6
+                mov     [r0], r1
+                mov     r0, r4
+                add     r0, 1
+                mov     r4, r0
+loc_7:          cmp     r4, 6
+                jbe     loc_4
+                mov     r0, r3
+                add     r0, 1
+                mov     r3, r0
+loc_8:          cmp     r3, 9
+                jbe     loc_3
+                mov     r3, 0
+                jmp     loc_11
+loc_9:          mov     r0, r3
+                mov     r2, r0
+                mov     r0, 150
+                add     r0, r2
+                mov     r1, [r0]
+                mov     r0, r3
+                mov     r2, r0
+                mov     r0, 250
+                add     r0, r2
+                mov     r0, [r0]
+                cmp     r1, r0
+                jz      loc_10
+                mov     r0, 0
+                jmp     loc_12
+loc_10:         mov     r0, r3
+                add     r0, 1
+                mov     r3, r0
+loc_11:         cmp     r3, 69
+                jbe     loc_9
+                mov     r0, 1
+loc_12:         retn----------

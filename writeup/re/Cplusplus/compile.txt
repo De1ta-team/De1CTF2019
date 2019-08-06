@@ -1,0 +1,2 @@
+boost_1_69_0-bin-msvc-all-32-64
+windows visual studio 2019 Release

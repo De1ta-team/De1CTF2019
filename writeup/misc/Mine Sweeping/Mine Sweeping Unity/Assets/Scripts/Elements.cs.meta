@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 3628f97de1cc0ed43801ca235c06c35f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Thor: {fileID: 21300000, guid: 81bd310be9142234a9dca06ab5b2ea72, type: 3}
+  - Hodur: {fileID: 21300000, guid: f8470348619154649b6f67b372199650, type: 3}
+  - Baldr: {fileID: 21300000, guid: 1680e27d8140dcb4d990a61c1426836c, type: 3}
+  - Khaos: {fileID: 21300000, guid: d9290062c68ce8d4193291d8ba97164e, type: 3}
+  - resetButton: {instanceID: 0}
+  executionOrder: 200
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
