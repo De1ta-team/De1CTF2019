@@ -1,0 +1,1 @@
+flag = 'de1ctf{##Fb0x_1s_t00_s1mpl3,R1ght?}'
