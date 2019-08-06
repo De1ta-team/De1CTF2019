@@ -8,6 +8,4 @@ One is to write the script to decrypt the firmware by reversing the code of the 
 
 I hope you can gain something.
 
-Now, you have decrypted the firmware. Start hunting your router vulnerability !n something.
-
 Now, you have decrypted the firmware. Start hunting your router vulnerability !
