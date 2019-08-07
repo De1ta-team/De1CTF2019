@@ -1,0 +1,224 @@
+body{
+    margin: 0;
+    /*height: 100%;*/
+    overflow: hidden;
+    min-height: 600px;
+}
+
+/*定义滚动条的样式*/
+/*定义滚动条粗细及背景，height对应水平滚动条，width对应垂直滚动条 */
+::-webkit-scrollbar
+{
+    width: 10px;
+    /*height: 10px;*/
+    /*background-color: #e1e1e2;*/
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+    /*-webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.3);*/
+    border-radius: 10px;
+    /*background-color: #f5f5f7;*/
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    /*-webkit-box-shadow: inset 0 0 0px rgba(0,0,0,.3);*/
+    background-color: #e1e1e2;
+}
+
+/*设置所有的a标签鼠标移上去的时候都变成小手的形状*/
+a:hover{
+    cursor: pointer;
+}
+
+/*定义顶部和底部的宽高*/
+header,footer{
+    height: 50px;
+    width: 100%;
+    min-width: 600px;
+}
+/*设置顶部样式*/
+header{
+    background-color: #c62f2f;
+    position: fixed;
+    top: 0;
+}
+
+/*设置顶部所有内容垂直居中*/
+.top{
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+}
+
+/*设置顶部所有的span标签均为行内块元素*/
+.sTop{
+    display: inline-block;
+}
+
+/*设置“LOGO“的左外边距*/
+.s1{
+    width: 185px;
+    margin-left: 15px;
+}
+
+/*设置顶部左、右返回图片的样式*/
+.s2{
+    width: 24px;
+    height: 24px;
+    padding-left: 8px;
+    margin-left: -5px;
+    border: solid #a82828 1px;
+    border-radius:3px;
+}
+
+/*设置搜索输入框的样式*/
+.s3{
+    width: 220px;
+    background-color: #a82828;
+    border-radius:15px;
+    margin-left: 10px;
+}
+
+/*设置搜索输入框的样式*/
+input{
+    width:175px;
+    height:24px;
+    background-color: #a82828;
+    font-family: 宋体;
+    font-size: 11px;
+    color: #c77373;
+    border-color:transparent;
+    /*设置轮廓的样式，none定义无轮廓*/
+    outline: none;
+    /*CSS3属性，设置闪动的光标颜色*/
+    caret-color: #ffffff;
+    /*background:url(搜索1.png) no-repeat right center;*/
+    margin-left:10px;
+}
+
+
+footer{
+    border-top:solid #e1e1e2 1px ;
+    background-color: #f6f6f8;
+    position: fixed;
+    bottom: 0;
+}
+
+#container{
+    position: absolute;
+    top:50px;
+    bottom: 50px;
+    padding-right: 200px;
+}
+
+#left{
+    height: 100%;
+    width: 200px;
+    font-size: 13px;
+    position: absolute;
+    /*left: 0;*/
+    background-color: #f5f5f7;
+    overflow: auto;
+
+}
+
+/*p1设置左侧边栏1级标签的样式*/
+.p1{
+    color: #7d7d7d;
+    font-family:宋体;
+    padding-left:10px;
+}
+
+/*p1设置左侧边栏2级标签的样式*/
+.p2{
+    margin-top: 15px;
+}
+
+/*设置左侧边栏a标签的初始样式*/
+.a1{
+    text-decoration: none;
+    font-family:宋体;
+    color: #7d7d7d;
+    padding:8px 15px 8px ;
+    display:block;
+    margin: 0;
+    margin-left: 10px;
+}
+/*设置鼠标移上去的样式*/
+.a1:hover{
+    font-family:宋体;
+    color: #000000;
+
+}
+
+.a1_active{
+    background-color: #e6e7ea;
+    border-left: solid 3px #c62f2f;
+}
+
+
+#content{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    position: relative;
+    left: 200px;
+    background-color: #fafafa;
+    border-left:solid 1px #e1e1e2;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/*设置顶部导航栏样式*/
+.TopTitle{
+    text-align: center;
+    margin:0 auto;
+}
+
+.title{
+    width: 60px;
+    display: inline-block;
+    color: #333333;
+    font-size: 15px;
+    font-family: 宋体;
+    padding:10px 0;
+    margin-left:20px;
+    margin-bottom: -8px;
+    text-decoration: none;
+}
+
+.title:hover{
+    color: #c62f2f;
+}
+
+.title:active{
+    color: #c62f2f;
+    border-bottom:2px solid #c62f2f;
+}
+
+.title_active{
+    color: #c62f2f;
+    border-bottom:2px solid #c62f2f;
+}
+
+/*设置下划线样式*/
+.hr1{
+    background-color: #e1e1e2;
+    height:1px;
+    border:none;
+    width:95%;
+    margin-top:8px;
+}
+
+.h2{
+    background-color: #e1e1e2;
+    height:1px;
+    border:none;
+    width:70%;
+}
